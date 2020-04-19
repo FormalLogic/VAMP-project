@@ -1,4 +1,4 @@
-# Veggie-at-my-place (problem introduction)
+# Veggie-at-my-place (Python project)
 
 Veggie at my place (VAMP) is an organisation where students are put into teams. The students within a team then cook food for each other over the next few weeks.
 
