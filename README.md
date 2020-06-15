@@ -2,17 +2,23 @@
 
 Veggie at my place (VAMP) is an organisation where students are put into teams. The students within a team then cook food for each other over the next few weeks.
 
-This notebook will tackle a problem which VAMP and many other student/organisations could potentially face. The issue is how to assign a group of people into teams. Currently the teams are assigned **manually** by the organizers where an entire day is dedicated to group students. The teams should be based on the following informal guidelines
+This notebook will tackle a problem which VAMP and many other organizations could potentially face. The issue is how to assign a group of people into teams. Currently the teams are assigned **manually** by the organizers where an entire day is dedicated to group students into teams. The teams should be based on the following informal guidelines
 
 - Gender diversity
 - Diversity in nationalities
 - Student who live live near each other should be paired up
 
-The formal name of this problem is known as *matching* in graph theory.  However, the formalization could get a bit complicated for someone who is not familiar with discrete optimization. Therefore the python script only covers a manual approach using pandas commands to make the grouping easier. The last section of this document covers how one could formalize this problem where less manual work is needed. However this does require a bit of pre-planning and set up.
+The formal name of this problem is known as *matching* in graph theory.  However, the formalization could get a bit complicated for someone who is not familiar with discrete optimization. Therefore the python script only covers a manual approach using pandas to make the grouping easier. The last section of this document covers how one could formalize this problem where less manual work is needed. However this does require a bit of pre-planning and set up.
 
 
 
-These criteria is very informal (non-numeric) which makes the problem hard the compute. It is also hard for the organizers to describe the above criteria formally since they don't know the how the in
+## Python script
+
+When the students sign up for VAMP it is hard to know the data before hand.  Hence it is hard to write a python script which covers all possible cases.  The "manual work" done by the organizers is by looking at all of the data individually and brute forcing for potential solutions. However, writing a python script to cover all cases is messy. Also the script could easily encounter errors if it receives input which is not handled. 
+
+Pandas is a tool in python used for data manipulation and analysis. Pandas allows us to visualize the data easier so we can make the grouping decisions.  Pandas also is great for selection based on condition, i.e finding all students who are within a certain location and within a certain age span.
+
+The Jupyter notebook in this repository contains the script for helping VAMP and other organizations with similar issue . The MOCK_DATA.csv was generated with Mockaroo.
 
 
 
